@@ -1,0 +1,20 @@
+CONTROLLER IN LARAVEL : 
+
+    WHAT IS A CONTROLLER ? 
+        - The controller comes under MVC architecture. 
+        - The Controller handles requires from user 
+            - Display view. 
+            - Handle database. 
+        - We an say that : The controller is a central unit that handles user request, model and views
+
+
+
+IN THIS FILE WE CREATED A USER CONTROLLER CLASS AND INSIDE OF THAT WE CREATED SOME FUNCTIONS 
+IN THESE FUNCTIONS WE RETURNED HTML PAGES FROM VIEWS 
+FLOW STRUCTURE : Routes -> Controller -> (functions returning html pages) -> Views
+
+We also learn how to pass values from urls to controllers and functions and to html pages 
+EXAMPLE : 
+    a) ROUTE :- Route::get("user/{name}", [UserController::class,'getUserDetails']); // Passing variable from url to this function !
+    b) CONTROLLER :- function getUserDetails($name)  
+    c) VIEWS :- return view('user', ['name' => $name]) ; // this user is a html page i.e user.blade.php

@@ -1,0 +1,8 @@
+BLADE TEMPLATE : 
+    - Blade is a simple, yet powerful templating engine for executing PHP code. 
+    - This is included in the Laravel framework. 
+    - The template engine is a module or tool for executing code. 
+    - We can write PHP tags also in the blade template. 
+    - To use blade template view should end with the .blade.php extension. 
+
+

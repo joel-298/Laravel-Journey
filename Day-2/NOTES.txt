@@ -1,0 +1,51 @@
+QUESTION 1 : Difference between using ".blade.php" as an extension and just ".php" as an extension ? 
+ANSWER     : Syntax difference ! 
+EXAMPLE    : 
+                (A) Using Blade : 
+                    <body>
+                        <h1>Hello, {{ $name }}!</h1>
+                        @if($name === 'Joel')
+                            <p>Welcome back, Admin!</p>
+                        @else
+                            <p>Welcome to our site!</p>
+                        @endif
+                    </body>
+
+                (B) Using Php : 
+                    <body>
+                        <h1>Hello, <?php echo htmlspecialchars($name); ?>!</h1>
+                        <?php if ($name === 'Joel'): ?>
+                            <p>Welcome back, Admin!</p>
+                        <?php else: ?>
+                            <p>Welcome to our site!</p>
+                        <?php endif; ?>
+                    </body>
+
+
+
+
+QUESTION 2 : Does it follows MVC (Model View Controller Architecture) architecture ? 
+ANSWER     : Yes
+
+
+
+IN THIS FOLDER WE WILL LEARN : 
+
+    ROUTING IN LARAVEL :    
+        - What is Routing 
+        - How to make route 
+        - Open view with routing 
+        - Pass data with routing 
+        - Anchor tag 
+        - Redirect with routing 
+        - Routing methods 
+
+
+
+ROUTING METHODS IN LARAVEL : 
+    Route :: get     ( $uri , $callback ) ; 
+    Route :: post    ( $uri , $callback ) ; 
+    Route :: put     ( $uri , $callback ) ; 
+    Route :: patch   ( $uri , $callback ) ; 
+    Route :: delete  ( $uri , $callback ) ; 
+    Route :: options ( $uri , $callback ) ; 
