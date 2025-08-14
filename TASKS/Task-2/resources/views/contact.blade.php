@@ -4,6 +4,20 @@
 @section('title', 'MediLab - Contact')
 
 @section('content')
+    <!-- ======= Breadcrumbs Section ======= -->
+    <section class="breadcrumbs">
+        <div class="container">
+
+            <div class="d-flex justify-content-between align-items-center">
+                <h2>Contact Us</h2>
+                <ol>
+                    <li><a href="{{ route('home') }}">Home</a></li>
+                    <li>Contact</li>
+                </ol>
+            </div>
+
+        </div>
+    </section><!-- End Breadcrumbs Section -->
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
       <div class="container">

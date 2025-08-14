@@ -4,6 +4,20 @@
 @section('title', 'MediLab - Services')
 
 @section('content')
+    <!-- ======= Breadcrumbs Section ======= -->
+    <section class="breadcrumbs">
+        <div class="container">
+
+            <div class="d-flex justify-content-between align-items-center">
+                <h2>Our Services</h2>
+                <ol>
+                    <li><a href="{{ route('home') }}">Home</a></li>
+                    <li>Services</li>
+                </ol>
+            </div>
+
+        </div>
+    </section><!-- End Breadcrumbs Section -->
 <!-- ======= Services Section ======= -->
 <section id="services" class="services">
     <div class="container">

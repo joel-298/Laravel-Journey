@@ -3,6 +3,20 @@
 @section('title', 'MediLab - Appointment')
 
 @section('content')
+    <!-- ======= Breadcrumbs Section ======= -->
+    <section class="breadcrumbs">
+        <div class="container">
+
+            <div class="d-flex justify-content-between align-items-center">
+                <h2>Book an Appointment</h2>
+                <ol>
+                    <li><a href="{{ route('home') }}">Home</a></li>
+                    <li>Appointment</li>
+                </ol>
+            </div>
+
+        </div>
+    </section><!-- End Breadcrumbs Section -->
     <!-- ======= Appointment Section ======= -->
     <section id="appointment" class="appointment section-bg">
       <div class="container">
