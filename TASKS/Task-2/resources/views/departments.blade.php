@@ -1,5 +1,5 @@
 <!-- resources/views/departments.blade.php -->
-@extends('layouts.app')
+@extends('layouts.my-app')
 
 @section('title', $title)
 

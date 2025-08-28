@@ -1,5 +1,5 @@
 <!-- resources/views/doctors.blade.php -->
-@extends('layouts.app')
+@extends('layouts.my-app')
 
 @section('title', $title)
 
