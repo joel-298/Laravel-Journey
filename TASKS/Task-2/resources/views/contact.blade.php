@@ -1,7 +1,7 @@
 <!-- resources/views/contact.blade.php -->
 @extends('layouts.app')
 
-@section('title', 'MediLab - Contact')
+@section('title', $title)
 
 @section('content')
     <!-- ======= Breadcrumbs Section ======= -->

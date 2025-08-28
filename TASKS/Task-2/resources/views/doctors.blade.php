@@ -1,7 +1,7 @@
 <!-- resources/views/doctors.blade.php -->
 @extends('layouts.app')
 
-@section('title', 'MediLab - Doctors')
+@section('title', $title)
 
 @section('content')
 

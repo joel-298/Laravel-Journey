@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'MediLab - Home')
+@section('title', $title)
 
 @section('content')
 

@@ -1,0 +1,18 @@
+WAY 1 : TO MAKE AND EXPORT A CSV : WITHOUT USING MAATWEBSITE/EXCEL 
+1) Creare a controller where you will write the logic for exporting the csv 
+2) Call the controller through a router
+
+
+WAY 2 : TO MAKE AND EXPORT A CSV BY USING EXTERNAL DEPENDENCY LIKE MAATWEBSITE 
+1) Run some commands using terminal : 
+    - composer require maatwebsite/excel
+    - php artisan vendor:publish --provider="Maatwebsite\Excel\ExcelServiceProvider" --tag=config
+        (This will create a config/excel.php file (not mandatory to change for simple use).
+    - php artisan make:export UsersExport --model=User
+        (Create an Export Class)
+    - php artisan make:controller ExportController 
+        (Make controller) 
+    
+    a) Data is passed from controller to Exports 
+    b) Exports strandardize the data and then 
+    c) The dependency converts it into CSV

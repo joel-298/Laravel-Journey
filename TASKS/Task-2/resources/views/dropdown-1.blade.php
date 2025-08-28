@@ -19,9 +19,15 @@
 
     <section class="inner-page">
         <div class="container">
-            <p>
-                Example inner page template
-            </p>
+            <ul>
+                @if ($users->isEmpty() || $users->count() <= 0)
+                    <li>No users found</li>
+                @else
+                    @foreach ($users as $user)
+                        <li>{{ $user->name }}</li>
+                    @endforeach
+                @endif
+            </ul>
         </div>
     </section>
 
